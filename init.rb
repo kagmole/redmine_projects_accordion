@@ -8,10 +8,8 @@ Redmine::Plugin.register :redmine_projects_accordion do
 end
 
 class RedmineProjectsAccordionListener < Redmine::Hook::ViewListener
-
   # Adds javascript and stylesheet tags
   def view_layouts_base_html_head(context)
     stylesheet_link_tag('redmine_projects_accordion', :plugin => :redmine_projects_accordion)
   end
-  
 end
